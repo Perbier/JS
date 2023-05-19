@@ -1,0 +1,100 @@
+*{
+  background-color: #565252;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin: 10px;
+}
+
+h3, h4{
+  display: flex;
+  justify-content: center;
+}
+
+div{
+  /*border: 2px solid #000;*/
+  margin: 10px;
+}
+
+ol{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+form{
+  background-color: #5EF292;
+  border: 2px solid #5EF292;
+  padding: 10px;
+  width: 60%;
+  position: relative;
+  left: 20%;
+  display: grid;
+  margin: 10px;
+}
+
+.metr{
+  margin: 10px;
+  padding: 10px;
+  width: 60%;
+  position: relative;
+  left: 20%;
+  border: 2px solid #5EF292;
+  background-color: #5EF292;
+  display: flex;
+  justify-content: center;
+}
+
+.edytuj{
+  width: 100%;
+}
+
+select{
+  width: 100%;
+}
+
+label{
+  background-color: #5EF292;
+  display: grid;
+  justify-content: center;
+}
+
+p{
+  background-color: #5EF292;
+}
+
+table{
+  width: 60%;
+  position: relative;
+  left: 20%;
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+.podsumowanie p{
+  background-color: #565252;
+  margin: 5px;
+}
+
+th, td{
+  border: 2px solid #5EF292;
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}

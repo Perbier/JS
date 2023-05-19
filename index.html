@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="main.js" defer></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Dziennik Praktyki Zawodowej</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h3>Dziennik Praktyki Zawodowej</h3><br>
+        <ol>
+            <label>
+                <li><button class="m1">Metryczka</button></li>
+            </label>
+            <label>
+                <li><button class="d1">Dziennik Zajęć</button></li>
+            </label>
+            <label>
+                <li><button class="p1">Podsumowanie</button></li>
+            </label>
+        </ol>
+        <div class="widok metryczka" style="display: block;">
+            <h4>Wprowadź Dane Ucznia i Praktyki</h4>
+            <form action="" method="post" id="sub">
+                <label>Imię:<input type="text" id="imie" required></label><br>
+                <label>Nazwisko:<input type="text" id="nazawisko" required></label><br>
+                <label>Klasa:<input type="text" class="kalasus" required></label><br>
+                <label>Rok Szkolny:<input type="text" id="rok_szkolny" required></label><br>
+                <label>Odbytej W:<input type="text" class="miejsce" required></label><br>
+                <div>
+                    <label>Data Rozpoczęcia:<input type="date" class="datar" required></label>
+                    <label>Data Zakończenia:<input type="date" class="dataz" required></label>
+                </div>
+                <input type="submit">
+            </form>
+
+        </div>
+        <div class="widok metr" style="display: none;">
+            <p>Imię:
+            <p id="i1"></p>
+            </p><br>
+            <p>Nazwisko:
+            <p id="n1"></p>
+            </p><br>
+            <p>Klasa:
+            <p id="k1"></p>
+            </p><br>
+            <p>Rok Szkolny:
+            <p id="rs1"></p>
+            </p><br>
+            <p>Odbytej W:
+            <p id="mie1"></p>
+            </p><br>
+            <p>Data Rozpoczęcia:
+            <p id="dr1"></p>
+            </p><br>
+            <p>Data Zakończenia:
+            <p id="dk1"></p>
+            </p><br>
+            <button class="edytu">Edytuj</button>
+        </div>
+        <div class="widok dziennik" style="display: none;">
+            <h4>Wprowadź Nowe Zajęcia</h4>
+            <form id="prze">
+                <label>Wybierz Datę Zajęć:<input type="date"></label>
+                <label>Wybierz Dział:<select id="sel">
+                        <option value="Moduł_Wstępny">Moduł Wstępny</option>
+                        <option value="Montaz_Naprawa">Montaż, Naprawa, Konserwacja i Obsługa Sprzętu Komputerowego
+                        </option>
+                        <option value="Systemy_Informatyczne">Systemy Informatyczne</option>
+                        <option value="Tworzenie_Aplikacji">Tworzenie Aplikacji Internetowych</option>
+                    </select></label>
+                <label>Wybierz Temat:<select>
+                        <option value="">Czynności wstępne i szkolenia</option>
+                        <option value="">Struktura organizacyjna przedsiębiorstwa i elementy przetwarzania informacji
+                        </option>
+                        <option value="">Konfiguracja sprzętu komputerowego i oprogramowania</option>
+                        <option value="">Struktura i organizacja pracy informatyków</option>
+                        <option value="">Montaż sprzętu komputerowego</option>
+                        <option value="">Naprawa sprzętu komputerowego</option>
+                        <option value="">Konserwacja i obsługa sprzętu komputerowego</option>
+                        <option value="">Zasady administrowania systemami informatycznymi i archiwizowania danych
+                        </option>
+                        <option value="">Dokumentacja technologiczna przetwarzania informacji</option>
+                        <option value="">Biblioteki oprogramowania i zbiorów danych</option>
+                        <option value="">Zapoznanie z programami do administracji lokalnymi sieciami komputerowymi
+                        </option>
+                        <option value="">Obsługa programów używanych w przedsiębiorstwie</option>
+                        <option value="">komputerowe wspomaganie procesów projektowania</option>
+                        <option value="">Organizacja, zbieranie i kontrola danych, przetwarzanie i wykorzystywanie
+                        </option>
+                        <option value="">Elementy procesów projektowania, programowania i uruchamiania programów
+                            komputerowych</option>
+                        <option value="">Ochrona danych i procesów przetwarzania</option>
+                        <option value="">Konfiguracja serwerów i przeglądarek pod obsługę aplikacji internetowych
+                        </option>
+                        <option value="">Struktura witryny internetowej - HTML</option>
+                        <option value="">Stylizacja elementów witryny - CSS</option>
+                        <option value="">Programowanie aplikacji internetowych - JS, PHP</option>
+                        <option value="">Testowanie aplikacji internetowych</option>
+                    </select></label>
+                <div style="background-color: #5ef292;">
+                    Opiekun:
+                    <label>
+                        <p><input type="radio" name="opiekun">Jeży Paździor</p>
+                    </label>
+                    <label>
+                        <p><input type="radio" name="opiekun">Tadeusz Tetmajer</p>
+                    </label>
+                    <label>
+                        <p><input type="radio" name="opiekun">Helena Węglarz</p>
+                    </label>
+                </div>
+                Sprawozdanie:<textarea></textarea><br>
+                <p>Ile Godzin:<input type="number" id="czas"></p><br>
+                <p>Zrealizowano:<input type="checkbox"></p><br>
+                <input type="range" min="1" max="6"><br>
+                <input type="reset"><br>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="widok podsumowanie" style="display: none;">
+            <h4>Podsumowanie</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vivamus magna mauris, aliquet quis rutrum in, hendrerit
+                at libero. Ut odio massa, semper sit amet eros ac,
+                consectetur auctor felis. Pellentesque ut risus neque.
+                Ut et blandit felis, sed consectetur erat. Etiam et nisi
+                sit amet lacus ultrices eleifend. Fusce posuere nisl nec
+                nisl rutrum tempor. In fermentum tellus risus, sit amet
+                congue risus venenatis quis. Pellentesque eleifend at
+                mauris et feugiat. Proin sodales finibus tincidunt.
+                Interdum et malesuada fames ac ante ipsum primis in
+                faucibus. Integer diam turpis, aliquet at accumsan ac,
+                efficitur at diam. Aliquam in elementum leo. Praesent et
+                tortor sed ante porta suscipit. In tristique eget lacus
+                nec facilisis. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus. Donec sit amet cursus tortor,
+                convallis malesuada diam. Sed sollicitudin tempor dolor
+                nec aliquam. Cras porttitor vehicula quam, sit amet
+                accumsan enim gravida quis. Ut sit amet metus rutrum,
+                sollicitudin augue et, egestas nisi. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus. Donec est ipsum, viverra a placerat ut,
+                efficitur non sapien. Fusce vel dictum elit, non laoreet
+                ipsum. In pulvinar lectus eu sem suscipit tincidunt.
+                Curabitur sit amet ligula velit. Vivamus tincidunt, dolor.</p>
+            <table>
+                <tr>
+                    <th>Nazwa Modułu</th>
+                    <th>Ilość Godzin Zrealizowanych</th>
+                </tr>
+                <tr>
+                    <td>Moduł Wstępny</td>
+                    <td id="mw1"></td>
+                </tr>
+                <tr>
+                    <td>Montaż, Naprawa i Konserwacja Sprzętu Komputerowego</td>
+                    <td id="mnik1"></td>
+                </tr>
+                <tr>
+                    <td>Systemy Informatyczne</td>
+                    <td id="si1"></td>
+                </tr>
+                <tr>
+                    <td>Tworzenie Aplikacji Internetowych</td>
+                    <td id="tai1"></td>
+                </tr>
+                <tr>
+                    <td>Pozostałe Godziny</td>
+                    <td id="cz1"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <!--<footer>
+        <div>Kontakt</div>
+    </footer>-->
+</body>
+
+</html>
